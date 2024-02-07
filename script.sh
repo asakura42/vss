@@ -15,7 +15,7 @@ URLS=(
 MERGED_FILE="merge.txt"
 FINAL_OUTPUT="output.txt"
 
-CURL_TIMEOUT=10
+CURL_TIMEOUT=30
 
 fetch_and_decode() {
     local type="$1"
@@ -36,16 +36,41 @@ done
 
 sort -u "$MERGED_FILE" -o "$MERGED_FILE"
 
+item_exists_in_array() {
+    local item="$1"
+    local array=("${!2}")
+
+    for element in "${array[@]}"; do
+        if [[ "$element" == "$item" ]]; then
+            return 0
+        fi
+    done
+
+    return 1
+}
+
+# This array will store the unique identifiers
+unique_identifiers=()
+
 grep "^vmess:" "$MERGED_FILE" | awk -F'/' '{print $NF}' | while IFS= read -r line; do
-    echo "$line" | base64 -d 2>/dev/null | jq -c 'select(.tls == "tls" and ."skip-cert-verify" == false and .net == "ws" and .port == 443)' 2>/dev/null
-done | while IFS= read -r line; do
-    echo "$line" | base64 -w0 | sed 's|$|\n|;s|^|vmess://|'
+    json=$(echo "$line" | base64 -d 2>/dev/null | jq -c 'select(.tls == "tls" and ."skip-cert-verify" == false and .net == "ws" and .port == 443)' 2>/dev/null)
+    if [[ -n "$json" ]]; then
+        identifier=$(echo "$json" | jq -r '"\(.add):\(.port)"')
+        if ! item_exists_in_array "$identifier" unique_identifiers[@]; then
+            unique_identifiers+=("$identifier")
+            echo "$line" | base64 -w0 | sed 's|$|\n|;s|^|vmess://|'
+        fi
+    fi
 done >> "$FINAL_OUTPUT"
 
 grep "^ss:" "$MERGED_FILE" | while IFS= read -r line ; do
     if echo "$line" | grep -oP '(?<=ss:\/\/)[^@]+' | awk 'length > 80' | base64 -d 2>/dev/null | grep -q "2022-blake3\|ietf-poly1305" && echo "$line" | grep -q ":443#" ; then
-        echo "$line" >> "$FINAL_OUTPUT"
+        identifier=$(echo "$line" | grep -oP '(?<=@).*(?=#)')
+        if ! item_exists_in_array "$identifier" unique_identifiers[@]; then
+            unique_identifiers+=("$identifier")
+            echo "$line"
+        fi
     fi
-done
+done >> "$FINAL_OUTPUT"
 
 sort -u "$FINAL_OUTPUT" -o "$FINAL_OUTPUT"
