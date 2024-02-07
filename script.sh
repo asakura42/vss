@@ -36,8 +36,8 @@ done | while IFS= read -r line; do
     echo "$line" | base64 -w0 | sed 's|$|\n|;s|^|vmess://|'
 done >> "$FINAL_OUTPUT"
 
-grep "^ss:" merge.txt | while IFS= read -r line ; do
-    if echo "$line" | grep -q -oP '(?<=ss:\/\/)[^@]+'  | base64 -d 2>/dev/null | grep "2022-blake3\|ietf-poly1305" ; then 
+grep "^ss:" "$MERGED_FILE" | while IFS= read -r line ; do
+    if echo "$line" | grep -oP '(?<=ss:\/\/)[^@]+'  | base64 -d 2>/dev/null | grep -q "2022-blake3\|ietf-poly1305" ; then
         echo "$line" >> "$FINAL_OUTPUT"
     fi
 done
