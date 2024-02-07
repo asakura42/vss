@@ -58,7 +58,7 @@ grep "^vmess:" "$MERGED_FILE" | awk -F'/' '{print $NF}' | while IFS= read -r lin
         identifier=$(echo "$json" | jq -r '"\(.add):\(.port)"')
         if ! item_exists_in_array "$identifier" unique_identifiers[@]; then
             unique_identifiers+=("$identifier")
-            echo "$line" | base64 -w0 | sed 's|$|\n|;s|^|vmess://|'
+            echo "$json" | base64 -w0 | sed 's|$|\n|;s|^|vmess://|'
         fi
     fi
 done >> "$FINAL_OUTPUT"
