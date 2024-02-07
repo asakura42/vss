@@ -26,6 +26,7 @@ jobs:
 
       - name: Execute the script
         run: |
+          rm output.txt
           bash ./script.sh
 
       - name: Commit and push if there are changes
