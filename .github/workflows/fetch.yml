@@ -1,0 +1,37 @@
+name: Run Proxy Fetch Script
+
+on:
+  workflow_dispatch:
+  push:
+  schedule:
+    - cron: "0 */12 * * *"
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+        
+      - name: Set up job
+        run: |
+          mkdir -p .github/scripts
+          mkdir -p .github/workflows/data
+
+      - name: Execute the script
+        run: |
+          bash ./script.sh
+
+      - name: Commit and push if there are changes
+        run: |
+          git config --global user.email "anonim@example.org"
+          git config --global user.name "anonym"
+          git add output.txt
+          git commit -m "Update proxies - $(date +"%Y-%m-%d %T")" || exit 0
+          git push
