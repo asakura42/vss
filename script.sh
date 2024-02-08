@@ -76,7 +76,7 @@ grep "^vmess:" "$MERGED_FILE" | awk -F'/' '{print $NF}' | while IFS= read -r lin
     fi
 done >> "$FINAL_OUTPUT"
 
-grep "^ss:" "$MERGED_FILE" | grep ":443#" | while IFS= read -r line ; do
+grep "^ss:" "$MERGED_FILE" | grep ":443#" | awk 'length>80' | while IFS= read -r line ; do
     domain=$(echo "$line" | awk -F'@' '{print $2}' | awk -F':' '{print $1}' )
 
     if check_country "$domain"; then
@@ -88,4 +88,4 @@ grep "^ss:" "$MERGED_FILE" | grep ":443#" | while IFS= read -r line ; do
     fi
 done >> "$FINAL_OUTPUT"
 
-sort -u "$FINAL_OUTPUT" -o "$FINAL_OUTPUT"
+sort -ru "$FINAL_OUTPUT" -o "$FINAL_OUTPUT"
