@@ -8,7 +8,7 @@ on:
 
 jobs:
   run-script:
-    runs-on: archlinux-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Check out the repository
@@ -16,7 +16,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo pacman -Sy --noconfirm jq geoip geoip-database
+          sudo apt-get update
+          sudo apt-get install -y jq geopi-bin geoip-database
         
       - name: Set up job
         run: |
