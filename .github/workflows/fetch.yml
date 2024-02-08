@@ -17,7 +17,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y jq geopi-bin geoip-database
+          sudo apt-get install -y jq geoip-bin geoip-database
         
       - name: Set up job
         run: |
