@@ -53,8 +53,10 @@ check_country() {
 	local ip="$1"
 	local country_code=$(geoiplookup "$ip" | awk -F ',' '{print $1}' | awk -F ' ' '{print $NF}')
 	if [[ "$country_code" == "UA" || "$country_code" == "RU" || "$country_code" == "BE" || "$country_code" == "CN" ]]; then
+		echo "FOUND $country_code" 1>&2
 		return  1
 	else
+		echo "OKAY $country_code" 1>&2
 		return  0
 	fi
 }
@@ -62,8 +64,8 @@ check_country() {
 
 unique_identifiers=()
 
-grep "^vmess:" "$MERGED_FILE" | awk -F'/' '{print $NF}' | while IFS= read -r line; do
-json=$(echo "$line" | base64 -d  2>/dev/null | jq -c 'select(.tls == "tls" and ."skip-cert-verify" == false and .net == "ws" and .port ==  443)'  2>/dev/null)
+grep "^vmess:" "$MERGED_FILE" | sed 's|vmess://||' | while IFS= read -r line; do
+json=$(echo "$line" | base64 -d 2>/dev/null  | jq -c 'select(.tls == "tls" and ."skip-cert-verify" == false and .net == "ws" and .port ==  443)' 2>/dev/null  )
 if [[ -n "$json" ]]; then
 	identifier=$(echo "$json" | jq -r '"\(.add):\(.port)"')
 	ip_address=$(echo "$json" | jq -r '.add')
@@ -77,7 +79,7 @@ fi
 done >> "$FINAL_OUTPUT"
 
 grep "^ss:" "$MERGED_FILE"  | while IFS= read -r line ; do
-if echo "$line" | grep -oP '(?<=ss:\/\/)[^@]+' | awk 'length > 80' | base64 -d 2>/dev/null | grep -q "2022-blake3\|ietf-poly1305" && echo "$line" | grep -q ":443#" ; then
+if echo "$line" | grep -oP '(?<=ss:\/\/)[^@]+' | awk 'length > 80' | base64 -d 2>/dev/null  | grep -q "2022-blake3\|ietf-poly1305" && echo "$line" | grep -q ":443#" ; then
 	domain=$(echo "$line" | awk -F'@' '{print $2}' | awk -F':' '{print $1}' )
 
 	if check_country "$domain"; then
@@ -91,3 +93,4 @@ fi
 done >> "$FINAL_OUTPUT"
 
 sort -ru "$FINAL_OUTPUT" -o "$FINAL_OUTPUT"
+
