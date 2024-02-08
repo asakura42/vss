@@ -64,7 +64,7 @@ grep "^vmess:" "$MERGED_FILE" | awk -F'/' '{print $NF}' | while IFS= read -r lin
 done >> "$FINAL_OUTPUT"
 
 grep "^ss:" "$MERGED_FILE" | while IFS= read -r line ; do
-    if echo "$line" | grep -oP '(?<=ss:\/\/)[^@]+' | awk 'length > 80' | base64 -d 2>/dev/null | grep -q "2022-blake3\|ietf-poly1305" && echo "$line" | grep -q ":443#" ; then
+    if echo "$line" | grep -oP '(?<=ss:\/\/)[^@]+' | base64 -d 2>/dev/null | grep -q "2022-blake3\|ietf-poly1305" && echo "$line" | grep -q ":443#" ; then
         identifier=$(echo "$line" | grep -oP '(?<=@).*(?=#)')
         if ! item_exists_in_array "$identifier" unique_identifiers[@]; then
             unique_identifiers+=("$identifier")
