@@ -14,6 +14,8 @@ The primary focus is on Vmess, particularly the `ws+tls` protocol. Vmess `ws+tls
 
 In addition to Vmess, the list includes recommended Shadowsocks protocols such as `2022-blake3-aes-256-gcm`, `2022-blake3-chacha20-poly1305` (as recommended by the Xray project), and `chacha20-ietf-poly1305`, `xchacha20-ietf-poly1305`. These protocols are known for their strong security features and are recommended for users prioritizing data protection. Shadowsocks protocols do not support obfuscation by default, but may be good if you don't mind about your traffic. Also, due to large number of Shadowsocks providers, they are filtered by password length.
 
+Every server's default port is 443.
+
 ## Recommended software
 
 *rays:
