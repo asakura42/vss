@@ -73,4 +73,4 @@ grep "^ss:" "$MERGED_FILE" | while IFS= read -r line ; do
     fi
 done >> "$FINAL_OUTPUT"
 
-sort -u "$FINAL_OUTPUT" -o "$FINAL_OUTPUT"
+sort -ru "$FINAL_OUTPUT" -o "$FINAL_OUTPUT"
