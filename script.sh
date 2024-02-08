@@ -1,15 +1,15 @@
 #!/bin/bash
 
 URLS=(
-    "plain|https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.txt"
-    "b64|https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vmess"
-    "b64|https://raw.githubusercontent.com/mahdibland/SSAggregator/master/sub/sub_merge_base64.txt"
-    "b64|https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/All_Configs_base64_Sub.txt"
-    "b64|https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt"
-    "plain|https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list_raw.txt"
-    "b64|https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray"
-    "b64|https://raw.githubusercontent.com/mheidari98/.proxy/main/all"
-    "b64|https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub"
+	"plain|https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.txt"
+	"b64|https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vmess"
+	"b64|https://raw.githubusercontent.com/mahdibland/SSAggregator/master/sub/sub_merge_base64.txt"
+	"b64|https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/All_Configs_base64_Sub.txt"
+	"b64|https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt"
+	"plain|https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list_raw.txt"
+	"b64|https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray"
+	"b64|https://raw.githubusercontent.com/mheidari98/.proxy/main/all"
+	"b64|https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub"
 )
 
 MERGED_FILE="merge.txt"
@@ -53,10 +53,10 @@ check_country() {
 	local ip="$1"
 	local country_code=$(geoiplookup "$ip" | awk -F ',' '{print $1}' | awk -F ' ' '{print $NF}')
 	if [[ "$country_code" == "UA" || "$country_code" == "RU" || "$country_code" == "BE" || "$country_code" == "CN" ]]; then
-		echo "FOUND $country_code" 1>&2
+		echo "FOUND $ip $country_code" 1>&2
 		return  1
 	else
-		echo "OKAY $country_code" 1>&2
+		echo "OKAY $ip $country_code" 1>&2
 		return  0
 	fi
 }
@@ -93,4 +93,3 @@ fi
 done >> "$FINAL_OUTPUT"
 
 sort -ru "$FINAL_OUTPUT" -o "$FINAL_OUTPUT"
-
