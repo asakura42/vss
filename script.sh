@@ -65,7 +65,7 @@ check_country() {
 unique_identifiers=()
 
 grep "^vmess:" "$MERGED_FILE" | sed 's|vmess://||' | while IFS= read -r line; do
-json=$(echo "$line" | base64 -d 2>/dev/null  | jq -c 'select(.tls == "tls" and ."skip-cert-verify" == false and .net == "ws" and .port ==  443)' 2>/dev/null  )
+json=$(echo "$line" | base64 -d 2>/dev/null  | jq -c 'select(.tls == "tls" and ."skip-cert-verify" == false and .net == "ws" and (.port == "443" or .port == 443))' 2>/dev/null  )
 if [[ -n "$json" ]]; then
 	identifier=$(echo "$json" | jq -r '"\(.add):\(.port)"')
 	ip_address=$(echo "$json" | jq -r '.add')
