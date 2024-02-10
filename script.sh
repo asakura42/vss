@@ -14,6 +14,7 @@ URLS=(
 
 MERGED_FILE="merge.txt"
 FINAL_OUTPUT="output.txt"
+FINAL_OUTPUT_443="output_443.txt"
 
 CURL_TIMEOUT=30
 
@@ -65,31 +66,39 @@ check_country() {
 unique_identifiers=()
 
 grep "^vmess:" "$MERGED_FILE" | sed 's|vmess://||' | while IFS= read -r line; do
-json=$(echo "$line" | base64 -d 2>/dev/null  | jq -c 'select(.tls == "tls" and ."skip-cert-verify" == false and .net == "ws" and (.port == "443" or .port == 443))' 2>/dev/null  )
+json=$(echo "$line" | base64 -d 2>/dev/null  | jq -c 'select(.tls == "tls" and ."skip-cert-verify" == false and .net == "ws")' 2>/dev/null  )
 if [[ -n "$json" ]]; then
 	identifier=$(echo "$json" | jq -r '"\(.add):\(.port)"')
 	ip_address=$(echo "$json" | jq -r '.add')
-	if check_country "$ip_address"; then
-		if ! item_exists_in_array "$identifier" unique_identifiers[@]; then
+	if ! item_exists_in_array "$identifier" unique_identifiers[@]; then
+		if check_country "$ip_address"; then
 			unique_identifiers+=("$identifier")
-			echo "$json" | base64 -w0 | sed 's|$|\n|;s|^|vmess://|'
+			if echo "$json" | jq -c 'select(.port == "443" or .port == 443)' ; then
+				echo "$json" | base64 -w0 | sed 's|$|\n|;s|^|vmess://|' >> "$FINAL_OUTPUT_443"
+			fi
+			echo "$json" | base64 -w0 | sed 's|$|\n|;s|^|vmess://|' >> "$FINAL_OUTPUT"
 		fi
 	fi
 fi
-done >> "$FINAL_OUTPUT"
+done
 
 grep "^ss:" "$MERGED_FILE"  | while IFS= read -r line ; do
-if echo "$line" | grep -oP '(?<=ss:\/\/)[^@]+' | awk 'length > 40' | base64 -d 2>/dev/null  | grep -q "2022-blake3\|ietf-poly1305" && echo "$line" | grep -q ":443#" ; then
+if echo "$line" | grep -oP '(?<=ss:\/\/)[^@]+' | awk 'length > 40' | base64 -d 2>/dev/null  | grep -q "2022-blake3\|ietf-poly1305" ; then
 	domain=$(echo "$line" | awk -F'@' '{print $2}' | awk -F':' '{print $1}' )
 
-	if check_country "$domain"; then
-		identifier=$(echo "$line" | grep -oP '(?<=@).*(?=#)')
-		if ! item_exists_in_array "$identifier" unique_identifiers[@]; then
+	identifier=$(echo "$line" | grep -oP '(?<=@).*(?=#)')
+	if ! item_exists_in_array "$identifier" unique_identifiers[@]; then
+		if check_country "$domain"; then
 			unique_identifiers+=("$identifier")
-			echo "$line"
+			if echo "$line" | grep -q ":443#" ; then
+				echo "$line" >> "$FINAL_OUTPUT_443"
+			fi
+			echo "$line" >> "$FINAL_OUTPUT"
+
 		fi
 	fi
 fi
-done >> "$FINAL_OUTPUT"
+done
 
 sort -ru "$FINAL_OUTPUT" -o "$FINAL_OUTPUT"
+sort -ru "$FINAL_OUTPUT_443" -o "$FINAL_OUTPUT_443"
