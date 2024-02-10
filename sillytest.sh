@@ -5,3 +5,5 @@ chmod +x ./lite-linux-amd64-v0.15.0
 echo '{ "outputMode": 3 }' > config.json
 ./lite-linux-amd64-v0.15.0 -config config.json -test ./output.txt
 cat output.json | jq -r '.nodes[]|select(.max_speed > 0) | .link' > output.txt
+./lite-linux-amd64-v0.15.0 -config config.json -test ./output_443.txt
+cat output.json | jq -r '.nodes[]|select(.max_speed > 0) | .link' > output_443.txt
