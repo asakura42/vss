@@ -3,7 +3,7 @@
 This repository provides an auto-updating proxy list for Vmess and Shadowsocks, specifically designed to filter out less secure protocols in favor of more secure ones. It also employs obfuscation techniques to further enhance the security and privacy of your data.
 
 ```
-https://raw.githubusercontent.com/asakura42/vss/master/output.txt
+https://raw.githubusercontent.com/asakura42/vss/master/output.txt?v=1
 ```
 
 ## Emphasis on Vmess `ws+tls`
