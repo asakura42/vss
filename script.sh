@@ -70,8 +70,9 @@ json=$(echo "$line" | base64 -d 2>/dev/null  | jq -c 'select(.tls == "tls" and .
 if [[ -n "$json" ]]; then
 	identifier=$(echo "$json" | jq -r '"\(.add):\(.port)"')
 	ip_address=$(echo "$json" | jq -r '.add')
+ 		if check_country "$ip_address"; then
+
 	if ! item_exists_in_array "$identifier" unique_identifiers[@]; then
-		if check_country "$ip_address"; then
 			unique_identifiers+=("$identifier")
 			if echo "$json" | jq -c 'select(.port == "443" or .port == 443)' ; then
 				echo "$json" | base64 -w0 | sed 's|$|\n|;s|^|vmess://|' >> "$FINAL_OUTPUT_443"
@@ -87,8 +88,9 @@ if echo "$line" | grep -oP '(?<=ss:\/\/)[^@]+' | awk 'length > 40' | base64 -d 2
 	domain=$(echo "$line" | awk -F'@' '{print $2}' | awk -F':' '{print $1}' )
 
 	identifier=$(echo "$line" | grep -oP '(?<=@).*(?=#)')
+ 		if check_country "$domain"; then
+
 	if ! item_exists_in_array "$identifier" unique_identifiers[@]; then
-		if check_country "$domain"; then
 			unique_identifiers+=("$identifier")
 			if echo "$line" | grep -q ":443#" ; then
 				echo "$line" >> "$FINAL_OUTPUT_443"
