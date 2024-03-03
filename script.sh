@@ -84,7 +84,7 @@ fi
 done
 
 grep "^ss:" "$MERGED_FILE"  | while IFS= read -r line ; do
-if echo "$line" | grep -oP '(?<=ss:\/\/)[^@]+' | awk 'length > 40' | base64 -d 2>/dev/null  | grep -q "2022-blake3\|ietf-poly1305" ; then
+if echo "$line" | grep -oP '(?<=ss:\/\/)[^@]+' | awk 'length > 40' | base64 -d 2>/dev/null  | grep -q "2022-blake3\|ietf-poly1305\|aes-256-gcm" ; then
 	domain=$(echo "$line" | awk -F'@' '{print $2}' | awk -F':' '{print $1}' )
 
 	identifier=$(echo "$line" | grep -oP '(?<=@).*(?=#)')
