@@ -10,6 +10,7 @@ URLS=(
 	"b64|https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray"
 	"b64|https://raw.githubusercontent.com/mheidari98/.proxy/main/all"
 	"b64|https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub"
+ 	"b64|https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt"
 )
 
 MERGED_FILE="merge.txt"
