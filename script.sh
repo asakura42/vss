@@ -11,6 +11,7 @@ URLS=(
 	"b64|https://raw.githubusercontent.com/mheidari98/.proxy/main/all"
 	"b64|https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub"
  	"b64|https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt"
+  	"plain|https://raw.githubusercontent.com/Hosseinsavior/Mysub/main/all_configs/all_configs.txt"
 )
 
 MERGED_FILE="merge.txt"
