@@ -26,9 +26,9 @@ fetch_and_decode() {
 	local output_file="$3"
 
 	if [[ "$type" == "b64" ]]; then
-		curl -m "$CURL_TIMEOUT" -Ls "$url" | base64 -d | tee >(wc -l) >> "$output_file"
+		curl -m "$CURL_TIMEOUT" -Ls "$url" | base64 -d | python split_lines.py | tee >(wc -l) >> "$output_file"
 	else
-		curl -m "$CURL_TIMEOUT" -Ls "$url" | tee >(wc -l) >> "$output_file"
+		curl -m "$CURL_TIMEOUT" -Ls "$url" | python split_lines.py | tee >(wc -l) >> "$output_file"
 	fi
 }
 
