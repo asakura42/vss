@@ -83,7 +83,7 @@ with open('valid.csv', 'r') as csv_file:
         # Check if the first column matches any of the matched lines
         # and if the last column is not in excluded_countries
         if first_column in matched_lines and last_column not in excluded_countries:
-            final_results.append(csv_line.strip())
+            final_results.append(first_column)  # Save only the first column
 
-# Output the full list of matching lines
+# Output the list of matching first columns
 print("\n".join(final_results))
