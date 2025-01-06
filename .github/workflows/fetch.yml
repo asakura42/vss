@@ -39,6 +39,5 @@ jobs:
           git config --global user.email "anonim@example.org"
           git config --global user.name "anonym"
           git add output.txt
-          git add output_443.txt
           git commit -m "Update proxies - $(date +"%Y-%m-%d %T")" || exit 0
           git push
