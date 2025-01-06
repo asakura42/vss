@@ -7,4 +7,5 @@ unzip Xray-knife-linux-64.zip -x README.md
 cat valid.csv | awk -F',' '$2 == "passed" {print $1}'  > output.txt
 ./xray-knife net http -f output.txt -x csv -o valid.csv --rip --sort false --amount 10 --mdelay 5000 --thread 16 > debug.txt
 sed -i '1d' valid.csv
+wc -l valid.csv output.txt debug.txt
 python best.py > output.txt
