@@ -3,15 +3,11 @@
 URLS=(
 	"plain|https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.txt"
 	"b64|https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vmess"
-	"b64|https://raw.githubusercontent.com/mahdibland/SSAggregator/master/sub/sub_merge_base64.txt"
-	"b64|https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/All_Configs_base64_Sub.txt"
-	"b64|https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt"
+	"plain|https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt"
 	"plain|https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list_raw.txt"
 	"b64|https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray"
-	"b64|https://raw.githubusercontent.com/mheidari98/.proxy/main/all"
 	"b64|https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub"
  	"b64|https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt"
-  	"plain|https://raw.githubusercontent.com/Hosseinsavior/Mysub/main/all_configs/all_configs.txt"
    	"b64|https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/reality"
 )
 
