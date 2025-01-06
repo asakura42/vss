@@ -9,6 +9,7 @@ URLS=(
 	"b64|https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub"
  	"b64|https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt"
    	"b64|https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/reality"
+        "b64|https://raw.githubusercontent.com/thefatedefeater/V2ray-Config/main/Splitted-By-Protocol/vless.txt"
 )
 
 MERGED_FILE="merge.txt"
@@ -32,6 +33,8 @@ for item in "${URLS[@]}"; do
 	IFS='|' read -ra ADDR <<< "$item"
 	fetch_and_decode "${ADDR[0]}" "${ADDR[1]}" "$MERGED_FILE"
 done
+
+sed -i 's|\&amp;|\&|g' "$MERGED_FILE"
 
 sort -u "$MERGED_FILE" -o "$FINAL_OUTPUT"
 
