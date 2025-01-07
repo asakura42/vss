@@ -2,12 +2,6 @@
 
 This repository provides an auto-updating proxy list for Vmess and Shadowsocks, specifically designed to filter out less secure protocols in favor of more secure ones. It also employs obfuscation techniques to further enhance the security and privacy of your data.
 
-### 443-port only:
-```
-https://raw.githubusercontent.com/asakura42/vss/master/output_443.txt?v=1
-```
-
-### All ports:
 ```
 https://raw.githubusercontent.com/asakura42/vss/master/output.txt?v=1
 ```
@@ -20,9 +14,9 @@ The primary focus is on Vmess, particularly the `ws+tls` protocol. Vmess `ws+tls
 
 In addition to Vmess, the list includes recommended Shadowsocks protocols such as `2022-blake3-aes-256-gcm`, `2022-blake3-chacha20-poly1305` (as recommended by the Xray project), and `chacha20-ietf-poly1305`, `xchacha20-ietf-poly1305`. These protocols are known for their strong security features and are recommended for users prioritizing data protection. Shadowsocks protocols do not support obfuscation by default, but may be good if you don't mind about your traffic. Also, due to large number of Shadowsocks providers, they are filtered by password length.
 
-## Default Port
+## VLESS protocol
 
-Every server's default port is 443.
+In the last revision I added VLESS protocol that is not as perfect as Vmess `ws+tls` but has some useful features such as `XTLS-Reality`.
 
 ## Recommended software
 
