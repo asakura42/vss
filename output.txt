@@ -1,44 +1,25 @@
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvX0E3aW5OMXlxZVd0T1RM@207.246.101.50:1633#%F0%9F%87%BA%F0%9F%87%B8US-207.246.101.50-0393
-vless://a7e04b44-855e-4fe7-8fa0-31894e928bce@35.90.4.39:1212?security=reality&flow=xtls-rprx-vision&sni=stackoverflow.com&type=tcp&fp=chrome&pbk=RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A&sid=a4844ba7#🔒 VL-TCP-RLT 🇺🇸 US-35.90.4.39:1212
-vless://a7e04b44-855e-4fe7-8fa0-31894e928bce@34.222.28.204:1212?security=reality&flow=xtls-rprx-vision&sni=stackoverflow.com&type=tcp&fp=chrome&pbk=RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A&sid=a4844ba7#🔒 VL-TCP-RLT 🇺🇸 US-34.222.28.204:1212
-vless://a7e04b44-855e-4fe7-8fa0-31894e928bce@35.93.26.236:1212?security=reality&flow=xtls-rprx-vision&sni=stackoverflow.com&type=tcp&fp=chrome&pbk=RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A&sid=a4844ba7#🔒 VL-TCP-RLT 🇺🇸 US-35.93.26.236:1212
-vless://a7e04b44-855e-4fe7-8fa0-31894e928bce@54.201.68.86:1212?security=reality&flow=xtls-rprx-vision&sni=stackoverflow.com&type=tcp&fp=chrome&pbk=RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A&sid=a4844ba7#🔒 VL-TCP-RLT 🇺🇸 US-54.201.68.86:1212
-vless://a7e04b44-855e-4fe7-8fa0-31894e928bce@35.92.243.4:1212?security=reality&flow=xtls-rprx-vision&sni=stackoverflow.com&type=tcp&fp=chrome&pbk=RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A&sid=a4844ba7#🔒 VL-TCP-RLT 🇺🇸 US-35.92.243.4:1212
-vless://a7e04b44-855e-4fe7-8fa0-31894e928bce@52.26.88.220:1212?security=reality&flow=xtls-rprx-vision&sni=stackoverflow.com&type=tcp&fp=chrome&pbk=RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A&sid=a4844ba7#🔒 VL-TCP-RLT 🇺🇸 US-52.26.88.220:1212
-vless://a7e04b44-855e-4fe7-8fa0-31894e928bce@34.212.26.31:1212?security=reality&flow=xtls-rprx-vision&sni=stackoverflow.com&type=tcp&fp=chrome&pbk=RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A&sid=a4844ba7#🔒 VL-TCP-RLT 🇺🇸 US-34.212.26.31:1212
-vless://73159dbd-e01e-4492-a234-e5d7c335b128@129.153.80.239:23258?security=reality&flow=xtls-rprx-vision&sni=microsoft.com&type=tcp&fp=chrome&pbk=BSEvpP7N7XNtOgzDrCFEgu6ejgdBHOYRug6S_lTf5GM&sid=bfbc4c1f#🔒 VL-TCP-RLT 🇺🇸 US-129.153.80.239:23258
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpKSWhONnJCS2thRWJvTE5YVlN2NXJx@142.4.216.225:80#%F0%9F%87%A8%F0%9F%87%A6CA-142.4.216.225-0466
-vless://a7e04b44-855e-4fe7-8fa0-31894e928bce@18.216.29.97:1212?security=reality&flow=xtls-rprx-vision&sni=stackoverflow.com&type=tcp&fp=chrome&pbk=RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A&sid=a4844ba7#🔒 VL-TCP-RLT 🇺🇸 US-18.216.29.97:1212
-vless://a7e04b44-855e-4fe7-8fa0-31894e928bce@107.20.18.124:1212?security=reality&flow=xtls-rprx-vision&sni=stackoverflow.com&type=tcp&fp=chrome&pbk=RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A&sid=a4844ba7#🔒 VL-TCP-RLT 🇺🇸 US-107.20.18.124:1212
-vless://a7e04b44-855e-4fe7-8fa0-31894e928bce@54.157.49.227:1212?security=reality&flow=xtls-rprx-vision&sni=stackoverflow.com&type=tcp&fp=chrome&pbk=RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A&sid=a4844ba7#🔒 VL-TCP-RLT 🇺🇸 US-54.157.49.227:1212
-vless://a7e04b44-855e-4fe7-8fa0-31894e928bce@3.93.163.83:1212?security=reality&flow=xtls-rprx-vision&sni=stackoverflow.com&type=tcp&fp=chrome&pbk=RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A&sid=a4844ba7#🔒 VL-TCP-RLT 🇺🇸 US-3.93.163.83:1212
-vless://a7e04b44-855e-4fe7-8fa0-31894e928bce@52.55.12.106:1212?security=reality&flow=xtls-rprx-vision&sni=stackoverflow.com&type=tcp&fp=chrome&pbk=RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A&sid=a4844ba7#🔒 VL-TCP-RLT 🇺🇸 US-52.55.12.106:1212
-vless://a7e04b44-855e-4fe7-8fa0-31894e928bce@3.144.110.49:1212?security=reality&flow=xtls-rprx-vision&sni=stackoverflow.com&type=tcp&fp=chrome&pbk=RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A&sid=a4844ba7#🔒 VL-TCP-RLT 🇺🇸 US-3.144.110.49:1212
-vless://a7e04b44-855e-4fe7-8fa0-31894e928bce@44.200.35.241:1212?security=reality&flow=xtls-rprx-vision&sni=stackoverflow.com&type=tcp&fp=chrome&pbk=RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A&sid=a4844ba7#🔒 VL-TCP-RLT 🇺🇸 US-44.200.35.241:1212
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpKSWhONnJCS2thRWJvTE5YVlN2NXJx@ca225.vpnbook.com:80#%F0%9F%87%A8%F0%9F%87%A6CA-142.4.216.225-0470
-vless://a7e04b44-855e-4fe7-8fa0-31894e928bce@3.149.28.192:1212?security=reality&flow=xtls-rprx-vision&sni=stackoverflow.com&type=tcp&fp=chrome&pbk=RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A&sid=a4844ba7#🔒 VL-TCP-RLT 🇺🇸 US-3.149.28.192:1212
-vless://a7e04b44-855e-4fe7-8fa0-31894e928bce@3.12.150.246:1212?security=reality&flow=xtls-rprx-vision&sni=stackoverflow.com&type=tcp&fp=chrome&pbk=RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A&sid=a4844ba7#🔒 VL-TCP-RLT 🇺🇸 US-3.12.150.246:1212
-vless://a7e04b44-855e-4fe7-8fa0-31894e928bce@3.147.63.237:1212?security=reality&flow=xtls-rprx-vision&sni=stackoverflow.com&type=tcp&fp=chrome&pbk=RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A&sid=a4844ba7#🔒 VL-TCP-RLT 🇺🇸 US-3.147.63.237:1212
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@64.74.163.130:990#%F0%9F%87%BA%F0%9F%87%B8US-64.74.163.130-1377
-vless://a7e04b44-855e-4fe7-8fa0-31894e928bce@3.142.119.92:1212?security=reality&flow=xtls-rprx-vision&sni=stackoverflow.com&type=tcp&fp=chrome&pbk=RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A&sid=a4844ba7#🔒 VL-TCP-RLT 🇺🇸 US-3.142.119.92:1212
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnbVlEelNHNkszNXM4YjE5b1k0Zkd6@92.118.112.111:18622#%F0%9F%87%BA%F0%9F%87%B8US-92.118.112.111-0344
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn@series-a2.varzesh360.co:443#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20Amazon%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83
-vless://e8cfc69c-f9a4-40ed-b48d-d5da257f5c7c@107.172.57.21:443?security=reality&flow=xtls-rprx-vision&sni=osxapps.itunes.apple.com&type=tcp&fp=safari&pbk=f12r3TyZUUckM-XWQ7w63kcF19eZVvWdgZqqk4ry3Ss&sid=5b6fd34e#🔒 VL-TCP-RLT 🇺🇸 US-107.172.57.21:443
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn@series-a2.samanehha.co:443#%F0%9F%87%AC%F0%9F%87%A7GB-13.41.93.184-0401
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5TVg5V0dQZ1VFY1JabWxhYTBZSEhD@103.106.1.92:23492#%F0%9F%87%B2%F0%9F%87%A9MD-103.106.1.92-0410
 vmess://ewogICAgImFkZCI6ICJqYWhma2poYS5jZmQiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICJqYWhma2poYS5jZmQiLAogICAgImlkIjogIjk1MGRiNmFhLTQ5MjYtNDYxNi04MTZlLWVjMDMxMmRjYjg3YiIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi9saW5rd3MiLAogICAgInBvcnQiOiA0NDMsCiAgICAicHMiOiAi8J+HuvCfh7hVUy0xNzMuMjU1LjIzMi43NC0wNzc1IiwKICAgICJ0bHMiOiAidGxzIiwKICAgICJ0eXBlIjogImF1dG8iLAogICAgInNlY3VyaXR5IjogImF1dG8iLAogICAgInNraXAtY2VydC12ZXJpZnkiOiBmYWxzZSwKICAgICJzbmkiOiAiamFoZmtqaGEuY2ZkIgp9
-vless://84a85f2c-8b8c-433f-94bb-e8f77e75cc45@5.104.107.135:10325?security=reality&flow=xtls-rprx-vision&sni=de.nahadeh.co&type=tcp&fp=chrome&pbk=gH1wDGHWOwSDsG_5HIgHWjeGjaQCZ6HxoliYi5LqczI#🔒 VL-TCP-RLT 🇩🇪 DE-5.104.107.135:10325
-vless://dda6dc2f-fba7-424b-8413-adfe056c1de1@188.245.240.68:2083?security=reality&flow=xtls-rprx-vision&sni=refersion.com&type=tcp&fp=random&pbk=hwKuMbkMN0NuBzsoBMDh6VRlWDv7UBXyw6-1MUlFAms&sid=e0f1ce196ee5#🔒 VL-TCP-RLT 🇩🇪 DE-188.245.240.68:2083
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@195.181.160.6:990#%F0%9F%87%A8%F0%9F%87%BFCZ-195.181.160.6-0440
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1UVM1bnRWcUMwMHNTS2tlTnpVaUQz@89.23.103.125:42090#%F0%9F%87%B3%F0%9F%87%B1NL-89.23.103.125-0487
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjTjVSUlR3N3ZZYWRFZFJjZElkdWl4@94.131.97.22:5139#%F0%9F%87%A8%F0%9F%87%BFCZ-94.131.97.22-0427
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@154.90.63.193:990#%F0%9F%87%B0%F0%9F%87%B7KR-154.90.63.193-6234
-vless://7e14954d-1233-4b71-bd16-585751d4c56c@150.241.102.95:10799?security=reality&flow=xtls-rprx-vision&sni=google.com&type=tcp&fp=random&pbk=yw374OPQfpF0KpnFYX2zYnO8-NC7RkgGbbiMzmZYvDU&sid=330602658f0ade#🔒 VL-TCP-RLT 🇳🇱 NL-150.241.102.95:10799
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplU0hFZEp6OTZycU5rT0NBemQ1Q3N2@94.131.123.147:7383#%F0%9F%87%BA%F0%9F%87%B8US-94.131.123.147-0448
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR@series-a2-me.varzesh360.co:443#%F0%9F%87%A7%F0%9F%87%ADBH-16.24.189.235-0473
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpKSWhONnJCS2thRWJvTE5YVlN2NXJx@ca225.vpnbook.com:80#%F0%9F%87%A8%F0%9F%87%A6CA-142.4.216.225-0470
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpKSWhONnJCS2thRWJvTE5YVlN2NXJx@142.4.216.225:80#%F0%9F%87%A8%F0%9F%87%A6CA-142.4.216.225-0466
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvX0E3aW5OMXlxZVd0T1RM@207.246.101.50:1633#%F0%9F%87%BA%F0%9F%87%B8US-207.246.101.50-0393
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@64.74.163.130:990#%F0%9F%87%BA%F0%9F%87%B8US-64.74.163.130-1377
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnbVlEelNHNkszNXM4YjE5b1k0Zkd6@92.118.112.111:18622#%F0%9F%87%BA%F0%9F%87%B8US-92.118.112.111-0344
+vless://e8cfc69c-f9a4-40ed-b48d-d5da257f5c7c@107.172.57.21:443?security=reality&flow=xtls-rprx-vision&sni=osxapps.itunes.apple.com&type=tcp&fp=safari&pbk=f12r3TyZUUckM-XWQ7w63kcF19eZVvWdgZqqk4ry3Ss&sid=5b6fd34e#🔒 VL-TCP-RLT 🇺🇸 US-107.172.57.21:443
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn@series-a2.varzesh360.co:443#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20Amazon%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83
+vless://73159dbd-e01e-4492-a234-e5d7c335b128@129.153.80.239:23258?security=reality&flow=xtls-rprx-vision&sni=microsoft.com&type=tcp&fp=chrome&pbk=BSEvpP7N7XNtOgzDrCFEgu6ejgdBHOYRug6S_lTf5GM&sid=bfbc4c1f#🔒 VL-TCP-RLT 🇺🇸 US-129.153.80.239:23258
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn@series-a2.samanehha.co:443#%F0%9F%87%AC%F0%9F%87%A7GB-13.41.93.184-1268
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1MTdUM0J2cFlhYWl1VzJj@series-a2-mec.varzesh360.co:443#0%7C--5
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTppaXhqSzMwb0tEcHRJNnNRc1UzbTJL@62.210.88.22:443#%F0%9F%87%AB%F0%9F%87%B7%20_%E6%B3%95%E5%9B%BD
+vless://7e14954d-1233-4b71-bd16-585751d4c56c@150.241.102.95:10799?security=reality&flow=xtls-rprx-vision&sni=google.com&type=tcp&fp=random&pbk=yw374OPQfpF0KpnFYX2zYnO8-NC7RkgGbbiMzmZYvDU&sid=330602658f0ade#🔒 VL-TCP-RLT 🇳🇱 NL-150.241.102.95:10799
+vless://46ce658d-c433-430a-84aa-5980026badac@46.4.65.250:443?security=reality&flow=xtls-rprx-vision&sni=website.com&type=tcp&fp=chrome&pbk=0hH6R90pSxwm7nZPGtJJcJFhwCXU3Rvf-wcEHE7hczo#🔒 VL-TCP-RLT 🇩🇪 DE-46.4.65.250:443
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@195.181.160.6:990#%F0%9F%87%A8%F0%9F%87%BFCZ-195.181.160.6-0440
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpNN3gxbUdOT3doUGlSQjlqU3haSk55@51.13.182.236:6870#%F0%9F%87%AC%F0%9F%87%A7%20_%E8%8B%B1%E5%9B%BD
+vless://dda6dc2f-fba7-424b-8413-adfe056c1de1@188.245.240.68:2083?security=reality&flow=xtls-rprx-vision&sni=refersion.com&type=tcp&fp=random&pbk=hwKuMbkMN0NuBzsoBMDh6VRlWDv7UBXyw6-1MUlFAms&sid=e0f1ce196ee5#🔒 VL-TCP-RLT 🇩🇪 DE-188.245.240.68:2083
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn@series-a2.samanehha.co:443#%F0%9F%87%AC%F0%9F%87%A7GB-13.41.93.184-0401
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@46.183.217.232:990#%F0%9F%87%B1%F0%9F%87%BBLV-46.183.217.232-5787
+vless://a2a881b7-9f5f-499e-a166-55bb22df05c5@185.161.251.211:1633?security=reality&flow=xtls-rprx-vision&sni=stackoverflow.com&type=tcp&fp=chrome&pbk=ANlgAsYC8HmKfJnc5SFvru822urkxG1PzW1Zw4Vbm0Q&sid=9bc0a55a5379c0ed#🔒 VL-TCP-RLT 🇩🇪 DE-185.161.251.211:1633
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpNN3gxbUdOT3doUGlSQjlqU3haSk55@51.13.182.236:6870#%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplU0hFZEp6OTZycU5rT0NBemQ1Q3N2@94.131.123.147:7383#%F0%9F%87%BA%F0%9F%87%B8US-94.131.123.147-0448
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@154.90.63.193:990#%F0%9F%87%B0%F0%9F%87%B7KR-154.90.63.193-6234
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiZldaYnh0WG5QWDZzU0ZfbjlieXh3@62.60.233.173:2222#%F0%9F%87%B9%F0%9F%87%B7TR-62.60.233.173-0451
+vless://84a85f2c-8b8c-433f-94bb-e8f77e75cc45@5.104.107.135:10325?security=reality&flow=xtls-rprx-vision&sni=de.nahadeh.co&type=tcp&fp=chrome&pbk=gH1wDGHWOwSDsG_5HIgHWjeGjaQCZ6HxoliYi5LqczI#🔒 VL-TCP-RLT 🇩🇪 DE-5.104.107.135:10325
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpwN0VoQzhNUjdvN0d1Um4yN1lGOFNRTkFLSjJsVWJCTklqY3lxU21CSHN5OHdMYko=@159.65.149.72:51348#%F0%9F%87%AE%F0%9F%87%B3IN-159.65.149.72-0477
-vless://dbc34aa9-3cb1-477a-c47d-998f8badf0e8@176.98.41.45:13509?security=reality&flow=xtls-rprx-vision&sni=www.sega.com&type=tcp&fp=chrome&pbk=IiuIighvDsor2v-vb5s3IJbNiqwLw568auiqoXxc7FM#🔒 VL-TCP-RLT 🇹🇷 TR-176.98.41.45:13509
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2WnI4TWxVWFVpaE5FbmRxSXBqRHhRZFNlcWkzN0ZiZ29IQm1RMXN5eTZaamtiQm4=@103.174.86.113:51348#%F0%9F%87%AE%F0%9F%87%B3IN-103.174.86.113-6468
