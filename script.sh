@@ -2,13 +2,12 @@
 
 URLS=(
 	"plain|https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.txt"
-	"b64|https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vmess"
 	"plain|https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt"
 	"plain|https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list_raw.txt"
 	"b64|https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray"
 	"b64|https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub"
  	"b64|https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt"
-   	"b64|https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/reality"
+   	"plain|https://raw.githubusercontent.com/lagzian/SS-Collector/refs/heads/main/working.txt"
 )
 
 MERGED_FILE="merge.txt"
