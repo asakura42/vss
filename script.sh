@@ -9,6 +9,9 @@ URLS=(
 	"b64|https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub"
  	"b64|https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt"
    	"b64|https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/reality"
+    	"plain|https://raw.githubusercontent.com/nyeinkokoaung404/V2ray-Configs/refs/heads/main/All_Configs_Sub.txt"
+     	"plain|https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/master/all_configs.txt"
+      	"plain|https://raw.githubusercontent.com/shabane/kamaji/master/hub/tested/merged.txt"
 )
 
 MERGED_FILE="merge.txt"
